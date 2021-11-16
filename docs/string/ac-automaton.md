@@ -199,20 +199,6 @@ def query(t):
 
 时间复杂度：定义 $|s_i|$ 是模板串的长度，$|S|$ 是文本串的长度，$|\Sigma|$ 是字符集的大小（常数，一般为 26）。如果连了 trie 图，时间复杂度就是 $O(\sum|s_i|+n|\Sigma|+|S|)$，其中 $n$ 是 AC 自动机中结点的数目，并且最大可以达到 $O(\sum|s_i|)$。如果不连 trie 图，并且在构建 fail 指针的时候避免遍历到空儿子，时间复杂度就是 $O(\sum|s_i|+|S|)$。
 
-???+ note "模板 1"
-    [LuoguP3808【模板】AC 自动机（简单版）](https://www.luogu.com.cn/problem/P3808)
-    
-    ```cpp
-    --8<-- "docs/string/code/ac-automaton/ac-automaton_1.cpp"
-    ```
-
-???+ note "模板 2"
-    [P3796【模板】AC 自动机（加强版）](https://www.luogu.com.cn/problem/P3796)
-    
-    ```cpp
-    --8<-- "docs/string/code/ac-automaton/ac-automaton_2.cpp"
-    ```
-
 ## 拓展
 
 ### 确定有限状态自动机
